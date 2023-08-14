@@ -1,0 +1,291 @@
+@font-face {
+    font-family: Vazir-thin;
+    src: url('fonts/Vazir-Thin.ttf');
+}
+
+
+
+:root {
+    --black: #333;
+
+    --white: #F6F1F1;
+
+
+    --ligh_blue: #19A7CE;
+    --dark-blur: #146C94;
+    --pink: #f56b7f;
+    --orange: #d4811a;
+    --gray : #b6b6b6;
+
+}
+
+* {
+    font-family: Vazir-thin;
+
+
+}
+
+body {
+    background: var(--black);
+}
+
+hr{
+    color: var(--gray);
+    
+}
+
+
+#headertext span {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 42px;
+    color: var(--white);
+}
+
+#nav_time {
+    font-size: 12px;
+
+
+
+}
+
+#time_of_city span {
+    font-size: 12px;
+}
+
+#digital_time {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.container .clock {
+    display: flex;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: var(--black);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.clock label {
+    position: absolute;
+    inset: 5px;
+    margin-top: 5px;
+    text-align: center;
+    transform: rotate(calc(var(--i) * (360deg / 12)));
+}
+
+.clock label span {
+    display: inline-block;
+    font-size: 18px;
+
+    font-weight: 800;
+    color: var(--white);
+    transform: rotate(calc(var(--i) * (-360deg / 12)));
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.6%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    background: var(--white);
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    background: var(--white);
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    background: var(--ligh_blue);
+}
+
+#select {
+    background: var(--black);
+    color: var(--white);
+   
+}
+
+
+
+#sokhanbozorgan {
+    color: var(--white);
+    font-size: 16px;
+}
+
+#bozorgan {
+    color: var(--ligh_blue);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#bozorgan:hover {
+    color: var(--white);
+
+}
+
+#lastmonth {
+    font-size: 10px;
+    color: var(--white);
+}
+
+#lastmonth:hover {
+    color: var(--ligh_blue);
+}
+
+#taghvim {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px var(--white);
+    background: var(--black);
+}
+
+#miladi,
+#ghamari {
+    font-size: 14px;
+    color: var(--white);
+}
+
+#dropdownMenuButton1,
+#dropdownMenuButton2 {
+    color: var(--white);
+    font-size: 16px;
+    padding: 0;
+}
+
+#nameofweek {
+    font-size: 14px;
+    background: var(--dark-blur);
+    width: 90%;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#nameofweek div {
+
+    width: 14.28%;
+
+}
+
+#row {
+
+    width: 90%;
+}
+
+#mainnumberofdays {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#submainnumberofdays {
+    font-size: 10px;
+
+}
+
+#colfriday {
+    border: 1px solid var(--pink);
+    border-radius: 3px;
+    color: var(--pink);
+}
+
+#currentday {
+    border: 1px solid var(--white);
+    border-radius: 3px;
+    color: var(--white);
+}
+
+#button1 {
+    background: var(--orange);
+    color: var(--white);
+}
+
+#button1:hover {
+    background: var(--white);
+    color: var(--black);
+}
+#listmonasebatha{
+    font-size: 14px;
+    color: var(--gray);
+}
+#roztatil {
+    color: var(--pink);
+ 
+}
+
+#monasebatha {
+    font-size: 14px;
+}
+
+#contentofmonth {
+    font-size: 14px;
+}
+
+#tabdil {
+    font-size: 12px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+#input{
+    background: var(--black);
+    color: var(--white);
+}
+
+#border1 {
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+#text1 {
+    line-height: 2rem;
+}
+
+#ulfooter a {
+    color: var(--white);
+    font-size: 14px;
+}
+
+#ulfooter a:hover {
+    color: var(--ligh_blue);
+
+    transition: 0.7s;
+
+}
+
+#footertext span {
+    font-size: 14px;
+
+}
+
+#footerlogo {
+    width: 10rem;
+}
+
+#monasebattoday{
+    font-size: 12px;
+}

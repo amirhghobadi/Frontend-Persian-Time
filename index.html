@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ساعت و تقویم ایران</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <header class="mb-3 bg-dark">
+
+    <div class="container">
+      <div class="row py-3">
+        <div class="text-left border-bottom" id="headertext">
+          <span>Time.ir</span>
+        </div>
+
+      </div>
+
+      <div class="row text-light bg-dark" id="nav_time">
+        <div class="col-md-1 col-sm-2 d-flex align-items-sm-center text-center p-1 text-light font-weight-bold">
+          <div class="row">
+            <div class="p-1">
+              <span>
+                تاریخ امروز
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-5 d-flex align-items-center text-center p-1">
+          <div class="row">
+            <div class="p-1 font-weight-bold">
+              <span>
+                خورشیدی
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                1402/05/12
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                چهارشنبه
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-5 d-flex align-items-center text-center p-1">
+          <div class="row">
+            <div class="p-1 font-weight-bold">
+              <span>
+                میلادی
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                2023-08-14
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                Monday - 2023 14 August
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-5 mr-auto d-flex align-items-center text-center p-1">
+          <div class="row">
+            <div class="p-1 font-weight-bold">
+              <span>
+                قمری
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                ۱۴۴۵/۰۱/۲۷
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                الإثنين - ٢٧ محرم ١٤٤٥
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-1 col-sm-5 d-flex align-items-start text-center p-1">
+          <div class="row">
+            <div class="p-1 font-weight-bold">
+              <span>
+                برج فلکی
+              </span>
+            </div>
+            <div class="p-1">
+              <span>
+                اسد
+              </span>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="container my-2">
+    <div>
+
+      <!-- main content -->
+      <div class="row my-3 bg-dark text-light">
+        <!-- section clock -->
+        <div class="col-lg-4 col-md-12 d-flex p-2 text-center align-items-center">
+          <div class="col">
+
+            <div class="row">
+              <!-- analog clock -->
+              <div class="container ml-auto my-3 d-flex justify-content-center">
+                <div class="clock">
+                  <label style="--i: 1"><span>1</span></label>
+                  <label style="--i: 2"><span>2</span></label>
+                  <label style="--i: 3"><span>3</span></label>
+                  <label style="--i: 4"><span>4</span></label>
+                  <label style="--i: 5"><span>5</span></label>
+                  <label style="--i: 6"><span>6</span></label>
+                  <label style="--i: 7"><span>7</span></label>
+                  <label style="--i: 8"><span>8</span></label>
+                  <label style="--i: 9"><span>9</span></label>
+                  <label style="--i: 10"><span>10</span></label>
+                  <label style="--i: 11"><span>11</span></label>
+                  <label style="--i: 12"><span>12</span></label>
+                  <!-- <div class="indicator">
+                <span class="hand hour"></span>
+                <span class="hand minute"></span>
+                <span class="hand second"></span>
+              </div> -->
+                  <div id="hour"></div>
+                  <div id="minute"></div>
+                  <div id="second"></div>
+                </div>
+              </div>
+            </div>
+            <!-- analog clock -->
+            <div dir="ltr" class="d-flex justify-content-center align-items-center p-1" id="digital_time">
+              00:00:00 AM
+            </div>
+          </div>
+        </div>
+        <!-- section clock finish -->
+        <!-- section oghat sharei -->
+        <div class="col-lg-8 col-md-12 d-flex text-center">
+          <div class="row mr-auto ml-0">
+            <div class="my-3">
+              <span class="border-bottom py-2 h5">
+                اوقات شرعی به افق شهر ها
+              </span>
+            </div>
+            <div class="col-sm-12 col-md-6 my-2">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="select">
+
+                <option value="1">آذربایجان شرقی</option>
+                <option value="2">آذربایجان غربی</option>
+                <option value="3">اردبیل</option>
+                <option value="4">اصفهان</option>
+                <option value="5">البرز</option>
+                <option value="6">ایلام</option>
+                <option value="7">بوشهر</option>
+                <option value="8">تهران</option>
+                <option value="9">چهارمحال و بختیاری</option>
+                <option value="10">خراسان جنوبی</option>
+                <option value="11">خراسان رضوی</option>
+                <option value="12">خراسان شمالی</option>
+                <option value="13">خوزستان</option>
+                <option value="14">زنجان</option>
+                <option value="15">سمنان</option>
+                <option value="16">سیستان و بلوچستان</option>
+                <option value="17">فارس</option>
+                <option value="18">قزوین</option>
+                <option value="19">قم</option>
+                <option value="20">کردستان</option>
+                <option value="21">کرمان</option>
+                <option value="22">کرمانشاه</option>
+                <option value="23">کهگیلویه و بویراحمد</option>
+                <option value="24">گلستان</option>
+                <option value="25">گیلان</option>
+                <option value="26">لرستان</option>
+                <option value="27">مازندران</option>
+                <option value="28">مرکزی</option>
+                <option value="29">هرمزگان</option>
+                <option value="31">همدان</option>
+                <option value="32">یزد</option>
+
+              </select>
+            </div>
+            <div class="col-sm-12 col-md-6 my-2">
+              <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="select">
+
+                <option value="1">شهر اول</option>
+                <option value="2">شهر دوم</option>
+                <option value="3">شهر سوم</option>
+              </select>
+            </div>
+            <div class="col-sm-12 col-md-6 text-right timeofcity" id="time_of_city">
+              <div class="row">
+                <div class="p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-brightness-low-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z" />
+                  </svg>
+                  <span class="font-weight-bold px-2">
+                    اذان صبح
+                  </span>
+                  <span>
+                    3:45
+                  </span>
+                </div>
+                <div class="p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-brightness-alt-low-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5 6a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zM2 11a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm10.243-3.536a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-8.486-.707a.5.5 0 1 0 .707.707.5.5 0 0 0-.707-.707zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4z" />
+                  </svg>
+                  <span class="font-weight-bold px-2">
+                    طلوع خورشید
+                  </span>
+                  <span>
+                    3:45
+                  </span>
+                </div>
+                <div class="p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-sun-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                  </svg>
+                  <span class="font-weight-bold px-2">
+                    اذان ظهر
+                  </span>
+                  <span>
+                    3:45
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 text-right" id="time_of_city">
+              <div class="row">
+                <div class="p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-brightness-alt-high" viewBox="0 0 16 16">
+                    <path
+                      d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z" />
+                  </svg>
+                  <span class="font-weight-bold px-2">
+                    غروب خورشید
+                  </span>
+                  <span>
+                    3:45
+                  </span>
+                </div>
+                <div class="p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-moon-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                  </svg>
+                  <span class="font-weight-bold px-2">
+                    اذان مغرب
+                  </span>
+                  <span>
+                    3:45
+                  </span>
+                </div>
+                <div class="p-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                    <path
+                      d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                  </svg>
+                  <span class="font-weight-bold px-2">
+                    نیمه شب شرعی
+                  </span>
+                  <span>
+                    3:45
+                  </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section oghat shareu finish -->
+
+
+
+      </div>
+      <!-- sokhan bozorgan -->
+      <div class="row bg-dark my-3 p-3">
+        <div>
+          <span id="sokhanbozorgan">
+            روزانه یک کار نیک انجام دهید و پس از انجام دادن یک کار خوب لبخند بزنید و شاهد لبخند دیگران باشید.
+          </span>
+        </div>
+        <div class="text-left pt-3">
+          <a class="text-decoration-none" href="#" id="bozorgan">
+            دیل کارنگی
+          </a>
+        </div>
+      </div>
+      <!-- sokhan bozorgan finish -->
+      <!-- taghvim -->
+      <div class="row bg-dark my-3">
+        <!-- taghvim main -->
+        <div class="col-lg-6 col-md-12 d-flex p-2 text-center align-items-start">
+          <div class="col m-4" id="taghvim">
+            <div class="row mt-2 d-flex align-items-end">
+              <div class="col-3">
+                <a dir="ltr" href="#" class="text-decoration-none" id="lastmonth">
+                  ماه قبل
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="col-6">
+                <div class="row justify-content-center">
+                  <!-- right drop down -->
+                  <div dir="rtl" class="col-4 text-right ml-2">
+                    <button class="btn btn-secondary btn-sm border-0 bg-transparent" type="button"
+                      id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                          class="bi bi-caret-down-fill my-2" viewBox="0 0 16 16">
+                          <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                        مرداد
+                      </span>
+
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <!-- right drop down -->
+                  <!-- left drop down -->
+                  <div dir="ltr" class="col-4 text-right mr-2">
+                    <button class="btn btn-secondary btn-sm border-0 bg-transparent" type="button"
+                      id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                          class="bi bi-caret-down-fill my-2" viewBox="0 0 16 16">
+                          <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                        1402
+                      </span>
+
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <!-- left drop down -->
+                </div>
+              </div>
+              <div class="col-3">
+                <a href="#" class="text-decoration-none" id="lastmonth">
+                  ماه بعد
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+            <div class="row m-0 text-center" id="miladi">
+              <span>
+                July - August 2023
+              </span>
+            </div>
+            <div class="row m-0 text-center" id="ghamari">
+              <span>
+                محرم - صفر - ١٤٤٥
+              </span>
+            </div>
+            <div class="row d-flex justify-content-center mt-2">
+              <!-- name of week -->
+              <div class="d-flex" id="nameofweek">
+                <div>ش</div>
+                <div>ی</div>
+                <div>د</div>
+                <div>س</div>
+                <div>چ</div>
+                <div>پ</div>
+                <div>ج</div>
+              </div>
+              <!-- day of week -->
+              <!-- days of month -->
+              <div class="mt-3 d-flex text-white" id="row">
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        1
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        2
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        3
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        4
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        5
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        6
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50" id="colfriday">
+                      <div class="pt-1" id="mainnumberofdays">
+                        7
+                      </div>
+                      <div class="d-flex justify-content-center" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="mt-2 d-flex text-white" id="row">
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        8
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        9
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        10
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        11
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        12
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        13
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50" id="colfriday">
+                      <div class="pt-1" id="mainnumberofdays">
+                        14
+                      </div>
+                      <div class="d-flex justify-content-center" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+              </div>
+              <div class="mt-2 d-flex text-white" id="row">
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        15
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        16
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        17
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50" id="currentday">
+                      <div class="pt-1" id="mainnumberofdays">
+                        18
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        19
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        20
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50" id="colfriday">
+                      <div class="pt-1" id="mainnumberofdays">
+                        21
+                      </div>
+                      <div class="d-flex justify-content-center" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+              </div>
+              <div class="mt-2 d-flex text-white" id="row">
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        22
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        23
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        24
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        25
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        26
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        27
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50" id="colfriday">
+                      <div class="pt-1" id="mainnumberofdays">
+                        28
+                      </div>
+                      <div class="d-flex justify-content-center" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+              </div>
+              <div class="my-2 d-flex text-white" id="row">
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        29
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        30
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div style="width: 14.28%;">
+                  <div class="row d-flex justify-content-center">
+                    <div class="w-50">
+                      <div class="pt-1" id="mainnumberofdays">
+                        31
+                      </div>
+                      <div class="d-flex justify-content-center text-secondary" id="submainnumberofdays">
+                        <div class="p-1">10</div>
+                        <div class="p-1">23</div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <button type="button" class="btn w-75 my-3 font-weight-bold" id="button1">
+                برو به امروز
+              </button>
+
+            </div>
+            <!-- days of month -->
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+        <!-- taghvim main finish -->
+        <!-- section monasebat ha -->
+        <div class="col-lg-6 col-md-12 d-flex justify-content-start">
+          <div class="col my-3 text-light">
+            <div class="row m-2">
+              <span class="border-bottom py-2 w-75 h5 text-light">
+                مناسبت های ماه مرداد
+              </span>
+            </div>
+            <ul class="list-group list-unstyled p-3" id="listmonasebatha">
+              <li id="roztatil">
+                <span>
+                  5 مرداد
+                </span>
+                تاسوعای حسینی
+                <span>
+                  [ 9 محرم ]
+                </span>
+              </li>
+              <li id="roztatil">
+                <span>
+                  6 مرداد
+                </span>
+                عاشورای حسینی
+                <span>
+                  [ 10 محرم ]
+                </span>
+              </li>
+              <li>
+                <span>
+                  7 مرداد
+                </span>
+                مرداد روز ، جشن مردادگان
+                <span>
+
+                </span>
+              </li>
+              <li>
+                <span>
+                  8 مرداد
+                </span>
+                روز بزرگداشت شیخ شهاب الدین سهروردی
+                <span>
+
+                </span>
+              </li>
+              <li>
+                <span>
+                  8 مرداد
+                </span>
+                شهادت امام زین العابدین علیه السلام
+                <span>
+                  [ 12 محرم ]
+                </span>
+              </li>
+              <li>
+                <span>
+                  10 مرداد
+                </span>
+                جشن چله تابستان
+                <span>
+                 
+                </span>
+              </li>
+              <li>
+                <span>
+                  10 مرداد
+                </span>
+                آغاز هفته جهانی شیردهی
+                <span>
+                 [ 1 August ]
+                </span>
+              </li>
+              <li>
+                <span>
+                  14 مرداد
+                </span>
+                صدور فرمان مشروطیت
+                <span>
+                 
+                </span>
+              </li>
+              <li>
+                <span>
+                  17 مرداد
+                </span>
+                روز خبرنگار
+                <span>
+                 
+                </span>
+              </li>
+              <li>
+                <span>
+                  22 مرداد
+                </span>
+                روز جهانی چپ دست ها
+                <span>
+                 [ 13 August ]
+                </span>
+              </li>
+              <li>
+                <span>
+                  28 مرداد
+                </span>
+                سالروز وقایع 28 مرداد پس از برکناری محمد مصدق
+                <span>
+                 
+                </span>
+              </li>
+              <li>
+                <span>
+                  28 مرداد
+                </span>
+                سالروز فاجعه آتش زدن سینما رکس آبادان
+                <span>
+                 
+                </span>
+              </li>
+              <li>
+                <span>
+                  28 مرداد
+                </span>
+                روز جهانی عکاسی
+                <span>
+                 [ 19 August ]
+                </span>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+        <!-- section monasebat ha finish -->
+        <!-- معرفی ماه -->
+        <div class="d-flex justify-content-center my-2">
+          <div class="py-2 text-center">
+            <span class="text-light h5 font-weight-bold">
+              مرداد نماد جاودانگی
+            </span>
+          </div>
+
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <div class="py-2 mx-3 text-center text-break">
+            <span class="text-light" id="contentofmonth">
+              مرداد یا اَمِرتات به معنی بیمرگی و جاودانگی است. نام پنجمین ماه گاهشماری ایران از نام ماه پنجم گاه‌شماری
+              اوستایی برگرفته شده‌است، که در اسطوره های باستانی ایران هم نام ایزد امشاسپندبانو اَمِرتات است. این
+              ایزدبانو یکی از شش امشاسپند اساطیری ایران است که به آنها نامیرایان نیکوکار می گویند. او سرور گیاهان است،
+              گیاهان را می‌رویاند و رمه‌ی گوسفندان را بیفزاید. او به کمک امشاسپند خرداد گوهر تن زرتشت را ساختند و
+              سرچشمه‌ی زندگی و رویش هستند.
+            </span>
+          </div>
+
+        </div>
+        <!-- معرفی ماه -->
+      </div>
+      <!-- تبدیل تاریخ -->
+      <div class="row d-flex bg-dark text-light justify-content-center">
+        <div class="row d-flex px-5">
+
+
+          <div class="d-flex justify-content-center">
+            <div class="my-3">
+              <div class="row m-2 text-center">
+                <span class="py-2 h5">
+                  تبدیل تاریخ
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="row d-flex">
+              <div>نوع تبدیل</div>
+              <div class="my-2">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="select">
+                  <option value="1">
+                    خورشیدی ( جلالی ) به میلادی و قمری
+                  </option>
+                  <option value="2">
+                    میلادی به خورشیدی ( جلالی ) و قمری
+                  </option>
+                  <option value="3">
+                    قمری به خورشیدی ( جلالی ) و میلادی
+                  </option>
+
+
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6">
+            <div class="row d-flex">
+              <div>روز</div>
+              <div class="my-2">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+
+
+
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="row d-flex">
+              <div>ماه</div>
+              <div class="my-2">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="select">
+                  <option value="1">
+                    فروردین - ماه اول
+                  </option>
+                  <option value="2">
+                    اردیبهشت - ماه دوم
+                  </option>
+                  <option value="3">
+                    خرداد - ماه سوم
+                  </option>
+                  <option value="4">
+                    تیر - ماه چهارم
+                  </option>
+                  <option value="5">
+                    مرداد - ماه پنجم
+                  </option>
+                  <option value="6">
+                    شهریور - ماه ششم
+                  </option>
+                  <option value="7">
+                    مهر - ماه هفتم
+                  </option>
+                  <option value="8">
+                    آبان - ماه هشتم
+                  </option>
+                  <option value="9">
+                    آذر - ماه نهم
+                  </option>
+                  <option value="10">
+                    دی - ماه دهم
+                  </option>
+                  <option value="11">
+                    بهمن - ماه یازدهم
+                  </option>
+                  <option value="12">
+                    اسفند - ماه دوازدهم
+                  </option>
+
+
+
+
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-6">
+            <div class="row d-flex">
+              <div>سال</div>
+              <div class="my-2">
+                <div class="input-group input-group-sm mb-3">
+
+                  <input type="text" placeholder="1402" maxlength="4" class="form-control" id="input"
+                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-flex align-items-center">
+            <div class="row p-2">
+              <button type="button" class="btn btn-sm font-weight-bold mt-2" id="button1">
+                تبدیل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-3">
+          <div class="row d-flex justify-content-center m-2 " id="tabdil">
+            <div class="col-lg-3 col-md-6 text-center my-2">
+              <div class="row">
+                <div class="p-1 font-weight-bold">
+                  <span>
+                    برج فلکی :
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    اسد
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center my-2">
+              <div class="row">
+                <div class="p-1 font-weight-bold">
+                  <span>
+                    خورشیدی :
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    چهارشنبه 18 مرداد 1402
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    1402/05/18
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center my-2">
+              <div class="row">
+                <div class="p-1 font-weight-bold">
+                  <span>
+                    میلادی :
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    Wednesday, August 9, 2023
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    2023-08-09
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center my-2">
+              <div class="row">
+                <div class="p-1 font-weight-bold">
+                  <span>
+                    قمری :
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    الأربعاء‬، ٢٢ محرم ١٤٤٥
+                  </span>
+                </div>
+                <div class="p-1">
+                  <span>
+                    ۱۴۴۵/۰۱/۲۲
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="d-flex row m-2 align-items-center">
+            <div class="col-lg-8 col-md-8 text-center mt-1">
+              <div class="d-flex h6">
+                <div class="py-1 font-weight-bold">
+                  <span>
+                    فاصله زمانی ( سن ) :
+                  </span>
+                </div>
+                <div class="py-1 px-1">
+                  <span>
+                    0 روز
+                  </span>
+                </div>
+                <div class="py-1">
+                  <span>
+                    سال
+                  </span>
+                </div>
+                <div class="py-1 px-1">
+                  <span>
+                    1402
+                  </span>
+                </div>
+                <div class="py-1">
+                  <span>
+                    کبیسه نیست.
+                  </span>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 text-left">
+
+              <button type="button" class="btn btn-sm w-100 font-weight-bold" id="button1">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    <path fill-rule="evenodd"
+                      d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                  </svg>
+                  مناسبت های این روز
+                </span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- تبدیل تاریخ -->
+
+      <!-- download -->
+      <div class="row d-flex bg-dark text-light justify-content-center my-3">
+
+        <div class="my-3">
+          <div class="row d-flex justify-content-center mx-1 " id="tabdil">
+            <div class="col-lg-3 col-md-4 text-center d-flex align-items-center  my-2">
+
+              <div class="row d-flex justify-content-center">
+                <div class="my-1 font-weight-bold w-75 h5">
+                  <span>
+                    اپلیکیشن Time.ir
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-8 text-center">
+              <div class="row my-2 d-flex justify-content-start align-items-center">
+                <div class="my-1 p-3 text-right font-weight-bold h6" id="text1">
+                  <span>
+                    اپلیکیشن سایت تایم، آماده‌ی استفاده‌ی شما عزیزان است، نسخه‌ی اندروید اپلیکیشن تایم را می‌توانید از
+                    لینک روبرو دانلود کنید.
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 text-center d-flex align-items-center my-2">
+
+              <div dir="ltr" class="row d-flex justify-content-center">
+                <div class="my-1 font-weight-bold h5">
+                  <button type="button" class="btn w-100 mb-2 font-weight-bold" id="button1">
+                    <span class="h5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                        class="bi bi-bag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
+                      </svg>
+                      دانلود از کافه بازار
+                    </span>
+                  </button>
+                  <button type="button" class="btn w-100 mt-2 font-weight-bold" id="button1">
+                    <span class="h5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                        class="bi bi-android2" viewBox="0 0 16 16">
+                        <path
+                          d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z" />
+                      </svg>
+                      دانلود مستقیم
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="my-1">
+          <div class="row d-flex justify-content-center mx-1 " id="tabdil">
+            <div class="col-lg-3 col-md-4 text-center d-flex align-items-center  my-2">
+
+              <div class="row d-flex justify-content-center">
+                <div class="my-1 font-weight-bold w-75 h5">
+                  <span>
+                    تقویم چاپی ۱۴۰۲
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-8 text-center">
+              <div class="row d-flex justify-content-start align-items-center">
+                <div class="my-1 p-3 text-right font-weight-bold h6">
+                  <span>
+                    تقویم چاپی سال 1402 خورشیدی نسخه A3
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 text-center d-flex align-items-center my-2">
+
+              <div dir="ltr" class="row d-flex justify-content-center ">
+                <div class="my-1 font-weight-bold h5">
+
+                  <button type="button" class="btn w-100 font-weight-bold" id="button1">
+                    <span class="h5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                      </svg>
+                      A3 نسخه دانلود
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="my-3">
+          <div class="row d-flex justify-content-center mx-1 " id="tabdil">
+            <div class="col-lg-3 col-md-4 text-center d-flex align-items-center  my-2">
+              <div class="row d-flex justify-content-center">
+                <div class="my-1 font-weight-bold w-75 h5">
+                  <span>
+                    تقویم چاپی ۱۴۰۲
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-8 text-center">
+              <div class="row d-flex justify-content-start align-items-center">
+                <div class="my-1 p-3 text-right font-weight-bold h6">
+                  <span>
+                    تقویم چاپی سال 1402 خورشیدی نسخه A4
+                  </span>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 text-center d-flex align-items-center  my-2">
+
+              <div dir="ltr" class="row d-flex justify-content-center">
+                <div class="my-1 font-weight-bold h5">
+
+                  <button type="button" class="btn w-100 font-weight-bold" id="button1">
+                    <span class="h5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                      </svg>
+                      A4 نسخه دانلود
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- download -->
+
+    <!-- main content finish -->
+
+
+  </section>
+
+
+  <footer class="bg-dark pb-5">
+    <div class="">
+      <div class="mt-3">
+        <ul class="nav justify-content-center py-3 px-5" id="ulfooter">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">ساعت و تقویم ایران</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="yearcalendar.html">تقویم سالیانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="infocalendar.html">درباره تقویم جلالی</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">فهرست کتاب های تایم</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">انتقاد ها و پیشنهاد ها</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="today.html">تاریخ امروز</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-3 text-white">
+        <div class="d-flex justify-content-center">
+          <div id="footertext">
+            <span>
+              خدمات طراحی سایت ، هاست ، ثبت دامنه و سرور مجازی : وب پلاس
+            </span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pt-3">
+          <div class="text-center" id="footerlogo">
+            <img class="img-fluid" src="images/logo2.png" alt="#">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
